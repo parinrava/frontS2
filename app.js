@@ -1,7 +1,7 @@
 // Function to insert patient data
 function insertPatient() {
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://testforme-fnbcgubhdfeha5eb.canadacentral-01.azurewebsites.net/api/insert", true); // Use localhost
+    xhr.open("POST", "https://backs2-ergrfwatfxhmcrgh.westus-01.azurewebsites.net/api/insert", true); // Use localhost
     xhr.setRequestHeader("Content-Type", "application/json");
 
     xhr.onreadystatechange = function () {
@@ -30,9 +30,9 @@ function runQuery() {
     const xhr = new XMLHttpRequest();
 
     if (method === "GET") {
-        xhr.open("GET", `https://testforme-fnbcgubhdfeha5eb.canadacentral-01.azurewebsites.net/api/query?sql=${encodeURIComponent(query)}`, true); // Use localhost
+        xhr.open("GET", `https://backs2-ergrfwatfxhmcrgh.westus-01.azurewebsites.net/api/query?sql=${encodeURIComponent(query)}`, true); // Use localhost
     } else {
-        xhr.open("POST", "https://testforme-fnbcgubhdfeha5eb.canadacentral-01.azurewebsites.net/api/query", true); // Use localhost
+        xhr.open("POST", "https://backs2-ergrfwatfxhmcrgh.westus-01.azurewebsites.net/api/query", true); // Use localhost
         xhr.setRequestHeader("Content-Type", "application/json");
     }
 
